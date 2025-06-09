@@ -43,7 +43,49 @@
 		</div>
 
 		<!-- Menu Card -->
-		<menu-card></menu-card>
+		<menu-card data='{
+  "restaurant": {
+    "name": "ABC ",
+    "description": "BAKERY",
+    "phone": "+91 0987654321",
+    "web": "www.reallygratsite.com",
+    "email": "reallygratsite@gmail.com"
+  },
+  "menu": [
+    {
+      "heading": "PIZZA",
+      "image": "./IMG/img11.jpg",
+      "imageClass": "img1 img-hover",
+      "items": [
+        { "name": "Pan Pizza", "price": 100 },
+        { "name": "Butter Pizza", "price": 120 },
+        { "name": "Chilia Pizza", "price": 140 },
+        { "name": "Detroit Pizza", "price": 160 },
+        { "name": "Cheese Pizza", "price": 180 },
+        { "name": "Chikhen Pizza", "price": 200 },
+        { "name": "Mushroom Pizza", "price": 220 },
+        { "name": "Pepperoni Pizza", "price": 240 }
+      ]
+    },
+    {
+      "heading": "BURGER",
+      "image": "./IMG/img33.jpg",
+      "imageClass": "img3 img-hover",
+      "image2": true,
+      "items": [
+        { "name": "Pug Burger", "price": 100 },
+        { "name": "Butter Burger", "price": 120 },
+        { "name": "Fruit Burger", "price": 140 },
+        { "name": "Chilia Stuffed", "price": 160 },
+        { "name": "Cheese Burger", "price": 180 },
+        { "name": "Chikhen Burger", "price": 200 },
+        { "name": "Mushroom Burger", "price": 220 },
+        { "name": "Pepperoni Burger", "price": 240 }
+      ]
+    }
+  ]
+}
+' config='{"menuListItemNameClass" : "menu-list-item-name bg-danger"}'></menu-card>
 	</div>
 
 	<script src="script.js"></script>

@@ -100,23 +100,6 @@ class MenuCard extends HTMLElement {
         this.innerHTML = '';
         const wrapper = this;
 
-        // Background
-        const bg = this.div(this.config.backgroundClass);
-        bg.innerHTML = `
-            <div class="box1"></div>
-            <div class="box2"></div>
-            <div class="box3"></div>
-            <div class="box4"></div>
-            <div class="box5"></div>
-            <div class="borders"></div>
-            <div><img src="./IMG/img2.png" class="img4"></div>
-            <div><img src="./IMG/img2.png" class="img5"></div>
-            <div><img src="./IMG/img2.png" class="img6"></div>
-            <div><img src="./IMG/img4.png" class="img7"></div>
-            <div><img src="./IMG/img5.png" class="img8"></div>
-        `;
-        // wrapper.appendChild(bg);
-
         // Contact Info
         const addContent = this.div(this.config.addContentClass);
         addContent.innerHTML = `

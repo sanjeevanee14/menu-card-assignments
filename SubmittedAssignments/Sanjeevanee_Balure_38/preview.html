@@ -139,14 +139,19 @@
 		</div>
 
 
-		<!-- Menu Card -->
-		<menu-card data='{
-    "restaurant": {
-	"name":"PIZZA MENU",
-    "phone": "+91 0987654321",
-    "web": "www.reallygritsite.com",
-    "email": "reallygritsite@gmail.com"
-  },
+
+
+
+
+    <!-- Menu data as JSON -->
++   <script id="menu-data" type="application/json">
++   {
++     "restaurant": {
++       "name": "PIZZA MENU",
++       "phone": "+91 0987654321",
++       "web": "www.reallygritsite.com",
++       "email": "reallygritsite@gmail.com"
++     }, 
   "menu": [
     {
       "image": "https://th.bing.com/th/id/OIP.Yh22Gn16hfs6QfNuoTObzwHaHa?rs=1&pid=ImgDetMain",
@@ -179,7 +184,11 @@
     }
   ]
 }
-' config='{"menuListItemNameClass" : "menu-list-item-name"}'></menu-card>
+</script>
+
+	<!--Menu Card-->
+	<menu-card id="menu-card" config='{"menuListItemNameClass":"menu-list-item-name"}'></menu-card>
+
 	</div>
 
 	<script src="script.js"></script>

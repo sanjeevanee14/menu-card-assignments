@@ -783,12 +783,14 @@ container {
       }
 
 .tomato {
-  top: 559px;    backgro.zig-zag-border {
   position: absolute;
-  padding: 1000px;
+  top: 559px;
+  left: 506px;
 }
 
-  left: 506px;
+/* If .zig-zag-border is intended, create a separate rule */
+.zig-zag-border {
+  /* properties here */
 }
 .mushroom {
   top: 197px;

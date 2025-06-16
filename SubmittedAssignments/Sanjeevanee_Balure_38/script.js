@@ -129,7 +129,10 @@ class MenuCard extends HTMLElement {
 
         // Restaurant name & description
         const nameDiv = this.div(this.config.restNameClass, this.data.restaurant.name);
-        const descDiv = this.div(this.config.restDescClass, this.data.restaurant.description);
+        if (this.data.restaurant.description) {
+    const descDiv = this.div(this.config.restDescClass, this.data.restaurant.description);
+    content.appendChild(descDiv);
+}
         content.appendChild(nameDiv);
         content.appendChild(descDiv);
 
